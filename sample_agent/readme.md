@@ -2,6 +2,13 @@
 
 A Python-based agent implementation using Google's ADK with simple responsibilities.
 
+## Web Interface
+
+The agent provides a user-friendly web interface for easy interaction:
+
+![Sample Agent Web Interface](res/sample_agent.png)
+*Web interface of the Sample Agent running on localhost:8000*
+
 ## Project Structure
 - `sample_agent/`: Main agent implementation directory
 - `.venv/`: Virtual environment directory
@@ -26,21 +33,27 @@ A Python-based agent implementation using Google's ADK with simple responsibilit
    ```bash
    cp .env.example .env
    ```
-4. Run the agent:
-   - CLI based run
-   ```bash
-   adk run sample_agent
-   ```
-- Web based run
-   ```bash
-   adk web
-   ```
-Then go to `http://localhost:8000` in your browser.
-## Tools
-- [tools.py](cci:7://file:///Users/saniyasultanatuba/Desktop/Python-dev/llm/google_agemt/sample_agent/tools/tools.py:0:0-0:0): Contains custom tools for the agent
 
-## Custom Tools
-- Greetings: Returns a random greeting from the greeting_styles list.
-- Farewell: Returns a random farewell from the farewell_styles list.
-- Current Time: Returns the current time.
+## Running the Agent
 
+### CLI Mode
+```bash
+adk run sample_agent
+```
+
+### Web Interface
+```bash
+adk web
+```
+Then visit `http://localhost:8000` in your browser to interact with the agent through the web interface shown above.
+
+## Available Tools
+
+The agent comes with several built-in tools to enhance interaction:
+
+### Custom Tools
+- **Greetings**: Returns a random greeting from the greeting_styles list
+- **Farewell**: Returns a random farewell from the farewell_styles list
+- **Current Time**: Returns the current time
+
+For implementation details, see [tools.py](tools/tools.py)
