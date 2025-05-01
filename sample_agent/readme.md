@@ -1,6 +1,6 @@
-# Google Agent Project
+# Google Agent Development Kit (ADK) - Project: Sample Agent
 
-A Python-based agent implementation using Google's APIs.
+A Python-based agent implementation using Google's ADK with simple responsibilities.
 
 ## Project Structure
 - `sample_agent/`: Main agent implementation directory
@@ -27,11 +27,20 @@ A Python-based agent implementation using Google's APIs.
    cp .env.example .env
    ```
 4. Run the agent:
+   - CLI based run
    ```bash
-   python -m sample_agent
+   adk run sample_agent
    ```
-
+- Web based run
+   ```bash
+   adk web
+   ```
+Then go to `http://localhost:8000` in your browser.
 ## Tools
 - [tools.py](cci:7://file:///Users/saniyasultanatuba/Desktop/Python-dev/llm/google_agemt/sample_agent/tools/tools.py:0:0-0:0): Contains custom tools for the agent
 
 ## Custom Tools
+- Greetings: Returns a random greeting from the greeting_styles list.
+- Farewell: Returns a random farewell from the farewell_styles list.
+- Current Time: Returns the current time.
+
