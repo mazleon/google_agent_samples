@@ -6,7 +6,7 @@ A Python-based agent implementation using Google's ADK with simple responsibilit
 
 The agent provides a user-friendly web interface for easy interaction:
 
-![Sample Agent Web Interface](res/sample_agent.png)
+![Sample Agent Web Interface](https://github.com/princexoleo/google_agent_samples/blob/main/res/sample_agent_webview.png)
 *Web interface of the Sample Agent running on localhost:8000*
 
 ## Project Structure
